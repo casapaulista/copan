@@ -8,6 +8,9 @@ A set of SCSS files separated by function:
 - Layout;
 - Typography;
 
+## Tools
+*copan* stylesheets are written in **Sassy CSS**, also known as SCSS, then every file is compiled to common CSS using [**grass**](https://docs.rs/grass/latest/grass/).
+
 ## Contributors
 Originally developed by [@thigcampos](https://thigcampos.com).
 
