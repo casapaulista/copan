@@ -34,7 +34,6 @@ h6 {
 p, li {
   color: inherit;
   font-size: var(--font-size-20);
-  font-weight: var(--font-weight-400);
   font-family: var(--font-family-body);
   line-height: var(--font-line-height-body);
   letter-spacing: var(--font-letter-spacing-body);
@@ -42,22 +41,13 @@ p, li {
 
 span {
   color: var(--label-primary-disabled);
-  font-weight: var(--font-weight-400);
   font-family: var(--font-family-body);
   line-height: var(--font-line-height-body);
 }
 
 a {
   color: var(--label-accent-default);
-  font-weight: var(--font-weight-400);
   font-family: var(--font-family-body);
   line-height: var(--font-line-height-body);
   letter-spacing: var(--font-letter-spacing-body);
-}
-
-pre {
-  padding: 1.25rem;
-  border-radius: 8px;
-  font-family: var(--font-family-code) !important;
-  font-weight: var(--font-weight-500);
 }

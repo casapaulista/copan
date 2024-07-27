@@ -1,5 +1,6 @@
 @import 'measures';
 
+// Global
 html, body {
   margin: 0;
   padding: 0;
@@ -11,6 +12,8 @@ html, body {
   background: var(--background-primary);
 }
 
+
+// Menu (NavBar)
 menu {
   margin: 0;
   padding: 0;
@@ -29,6 +32,8 @@ menu {
   font-style: italic;
 }
 
+
+// Footer 
 footer {
   gap: 1rem;
   width: 100%;
@@ -38,6 +43,8 @@ footer {
   justify-content: center;
 }
 
+
+// Section 
 section {
   display: flex;
   box-sizing: border-box;
