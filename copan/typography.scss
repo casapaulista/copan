@@ -45,9 +45,21 @@ span {
   line-height: var(--font-line-height-body);
 }
 
+
 a {
   color: var(--label-accent-default);
   font-family: var(--font-family-body);
   line-height: var(--font-line-height-body);
   letter-spacing: var(--font-letter-spacing-body);
+}
+
+.nav--item {
+  font-size: var(--font-size-20);
+  color: var(--label-accent-default);
+  transition: var(--anchor-transition);
+  text-decoration: var(--anchor-decoration);
+}
+
+.nav--item:hover, .nav--item:focus {
+  font-style: italic;
 }
