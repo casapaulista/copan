@@ -1,0 +1,23 @@
+.heading--title {
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-size: var(--font-size-40);
+  color: var(--label-accent-default);
+  font-family: var(--font-family-body);
+}
+
+.nav--item {
+  color: var(--label-primary-disabled);
+  font-size: var(--font-size-28);
+  text-decoration: none;
+}
+
+.nav--item-arrow {
+  font-size: var(--font-size-32);
+}
+
+.nav--item-email {
+  @extend .nav--item;
+  font-style: italic;
+  color: var(--label-accent-default);
+}

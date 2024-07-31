@@ -3,29 +3,33 @@
 h1, h2, h3, h4, h5, h6 {
   color: inherit;
   font-family: var(--font-family-title);
-  line-height: var(--font-line-height-title);
-  letter-spacing: var(--font-letter-spacing-title);
+  line-height: var(--line-height-title);
+  letter-spacing: var(--letter-spacing-title);
 }
 
 p {
   color: inherit;
   font-size: var(--font-size-20);
   font-family: var(--font-family-body);
-  line-height: var(--font-line-height-body);
-  letter-spacing: var(--font-letter-spacing-body);
+  line-height: var(--line-height-body);
+  letter-spacing: var(--letter-spacing-body);
+}
+
+b {
+  font-weight: 600;
 }
 
 span {
   color: var(--label-primary-disabled);
   font-family: var(--font-family-body);
-  line-height: var(--font-line-height-body);
+  line-height: var(--line-height-body);
 }
 
 a {
   color: var(--label-accent-default);
   font-family: var(--font-family-body);
-  line-height: var(--font-line-height-body);
-  letter-spacing: var(--font-letter-spacing-body);
+  line-height: var(--line-height-body);
+  letter-spacing: var(--letter-spacing-body);
 }
 
 .nav--item {
@@ -50,11 +54,11 @@ ol:before{
   font-family: var(--font-family-title);
 }
 
-.list--container-column-left {
+.container-column-left {
   width: 50%; 
 }
 
-.list--container-column-right {
+.container-column-right {
   width: 50%;
 }
 

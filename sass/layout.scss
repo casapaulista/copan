@@ -22,10 +22,10 @@ header {
 }
 
 nav, .nav {
+  gap: 2rem;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
 }
 
 section, .section {
@@ -34,17 +34,17 @@ section, .section {
   padding: var(--page-padding);
 }
 
-.section--container-column {
+.container--column {
   display: flex;
 }
 
-.section--container-spaced-between {
+.container--spaced-between {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.section--container-centered {
+.container--centered {
   display: flex;
   align-items: center;
   justify-content: center;
