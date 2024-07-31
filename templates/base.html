@@ -1,25 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <meta name="robots" content="nofollow" />
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="{{ get_url(path='colors.css', trailing_slash=false) | safe }}" crossorigin="anonymous" />
         <link rel="stylesheet" href="{{ get_url(path='form.css', trailing_slash=false) | safe }}" crossorigin="anonymous" />
+        <link rel="stylesheet" href="{{ get_url(path='media.css', trailing_slash=false) | safe }}" crossorigin="anonymous" />
         <link rel="stylesheet" href="{{ get_url(path='layout.css', trailing_slash=false) | safe }}" crossorigin="anonymous" />
         <link rel="stylesheet" href="{{ get_url(path='text.css', trailing_slash=false) | safe }}" crossorigin="anonymous" />
-        <link rel="icon" href="{{ get_url(path="favicon.ico", trailing_slash=false) | safe }}" crossorigin="anonymous" />
-        <link rel="alternate" type="application/rss+xml" title="Escritos" href="{{ get_url(path="blog/rss.xml", trailing_slash=false) }}">
-        <link rel="alternate" type="application/rss+xml" title="Líricos" href="{{ get_url(path="liricos/rss.xml", trailing_slash=false) }}">
-        {% block head %} {% endblock head %}
+        <link rel="icon" href="{{ get_url(path='favicon.ico', trailing_slash=false) | safe }}" crossorigin="anonymous" />
+        {% block head %}{% endblock head %}
     </head>
-
     <body>
-        {% block content %} {% endblock content %}
-        <footer>
-            {% include "footer.html" %}
-            {% block footer %} {% endblock footer %}
-        </footer>
+        {% block content %}{% endblock content %}
     </body>
-
 </html>

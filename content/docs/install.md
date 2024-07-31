@@ -3,8 +3,6 @@ date = 2024-07-31
 authors = ["Brasilis Club"]
 title = "Guia de Instalação"
 description = "Guia básico de instalação do copan"
-[taxonomies]
-assunto = ["Introdutorio"]
 [extra]
 longDate = "31 de Julho, 2024"
 +++

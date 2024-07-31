@@ -1,0 +1,17 @@
+<main> 
+    <section class="container--column">
+        <div arial-label="Listagem de postagens">
+            <h1 class="content--title">
+                {{ section.title }}
+            </h1>
+            <ul class="content--listing">
+                {% for page in section.pages %}
+                <li class="content--list-item">
+                    <span>{{ page.date }}</span>
+                    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+</main>

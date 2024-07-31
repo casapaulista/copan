@@ -1,40 +1,11 @@
 {% extends "base.html" %}
 
 {% block head %}
-<title>{{ page.title }} | Escritos</title>
+<title>{{ page.title }} | Copan</title>
 <meta name="description" content="{{ page.description }}" />
-<link rel="stylesheet" href="{{ get_url(path="pages/escrito.css", trailing_slash=false) | safe }}" />
+<link rel="stylesheet" href="{{ get_url(path='pages/article.css', trailing_slash=false) | safe }}" />
 {% endblock head %}
 
 {% block content %}
-<main class="page__container">
-    <article class="content__container">
-        <a href="{{ get_url(path='blog') }}" class="page__return">Voltar ao blog</a>
-        <h1 class="content__title">
-            {{ page.title }}
-        </h1>
-        {% set taxonomy_term = page.taxonomies.assunto | first %}
-        <span class="content__subtitle">{{ page.extra.longDate}} em <a href="/assunto/{{ taxonomy_term | lower }}">{{ taxonomy_term }}</a></span>
-        {{ page.content | safe }}
-        <div class="content__footer">
-            <p class="content__footer-signature">Thiago Campos, em Mantiqueira de Bragança</p>
-            <a class="content__footer-email" href="mailto:thiago@thigcampos.com?subject={{ page.title }}">Comente por E-mail</a>
-        </div>
-        <form
-            action="https://buttondown.email/api/emails/embed-subscribe/brasilisclub"
-            method="post"
-            target="popupwindow"
-            onsubmit="window.open('https://buttondown.email/brasilisclub', 'popupwindow')"
-            class="newsletter--container"
-            >
-            <label for="bd-email">Enter your email</label>
-            <input type="email" name="email" id="bd-email" />
-
-            <input type="submit" value="Subscribe" />
-            <p>
-            <a href="https://buttondown.email/refer/brasilisclub" target="_blank">Powered by Buttondown.</a>
-            </p>
-        </form>
-    </article>
-</main>
+{% include "partials/article.html" %}
 {% endblock content %}
