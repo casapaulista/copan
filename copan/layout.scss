@@ -21,17 +21,33 @@ header {
   padding: 0;
 }
 
-nav {
+nav, .nav {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
 }
 
-section {
+section, .section {
   min-height: 100vh;
   box-sizing: border-box;
   padding: var(--page-padding);
+}
+
+.section--container-column {
+  display: flex;
+}
+
+.section--container-spaced-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section--container-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 article {
