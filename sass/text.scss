@@ -54,6 +54,11 @@ ol:before{
   font-family: var(--font-family-title);
 }
 
+pre {
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
 .container-column-left {
   width: 50%; 
 }
