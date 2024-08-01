@@ -4,7 +4,7 @@ main {
 }
 
 .article--container {
-  width: 60%;
+  width: 80%;
   margin: auto;
 
   h2, h3, h4, h5, h6 {
@@ -25,7 +25,7 @@ main {
 }
 
 .article--subtitle {
-  color: var(--label-accent-disabled);
+  color: var(--label-accent);
   font-weight: var(--font-weight-400);
   font-family: var(--font-family-body);
   line-height: var(--line-height-body);

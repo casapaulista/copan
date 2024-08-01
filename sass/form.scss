@@ -4,7 +4,7 @@ button, input[type="submit"], .button {
   border-radius: .5rem;
   padding: .75rem 1rem;
   text-decoration: none;
-  color: var(--label-primary-default);
+  color: var(--label-primary);
   background-color: var(--fill-primary-default);
 }
 
@@ -18,13 +18,17 @@ button:focus, input[type="submit"]:focus, .button:focus {
 
 .button-accent {
   @extend .button;
-  color: var(--label-secondary-default);
+  color: var(--label-secondary);
   background-color: var(--fill-accent-default);
 }
 
 .button-accent:focus, .button-accent:hover {
-  color: var(--label-secondary-default);
   background-color: var(--fill-accent-hover);
 }
 
 
+@media (prefers-color-scheme: dark) {
+  .button-accent {
+    color: var(--label-primary);
+  }
+}

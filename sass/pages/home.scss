@@ -1,9 +1,9 @@
 .heading--title {
   font-weight: 400;
+  margin-top: 0;
   margin-bottom: 1rem;
-  font-size: var(--font-size-40);
-  color: var(--label-primary-default);
-  font-family: var(--font-family-body);
+  font-size: var(--font-size-120);
+  color: var(--label-primary);
 
   a {
     color: inherit;
@@ -11,8 +11,10 @@
   }
 }
 
-nav > a {
-  color: var(--label-primary-disabled);
-  font-size: var(--font-size-28);
-  text-decoration: none;
+nav {
+  gap: 1rem;
+}
+
+nav a:hover {
+  font-style: unset;
 }

@@ -6,11 +6,13 @@ description = "Uma introdução ao básico de paleta de cores no copan"
 [extra]
 longDate = "01 de Agosto, 2024"
 +++
-Copan inclue uma paleta de cores padronizada, seguindo o padrão esperado em vários
-navegadores modernos, garantindo uma experiência elegante e concisa.
+O Copan inclui uma paleta de cores padronizada, projetada para garantir uma 
+experiência elegante e consistente em diversos navegadores modernos. No entanto, 
+para atender às preferências individuais, também fornecemos uma configuração 
+flexível para personalização de cores.
 
-Contudo, há sempre aqueles que preferem seguir uma paleta de cores própria. Para facilitar,
-a seguir apresentamos todas as variáveis relacionadas a cores do Copan:
+A seguir, apresentamos todas as variáveis relacionadas a cores do Copan, 
+adaptadas para diferentes esquemas de cores:
 ```scss
 @media (prefers-color-scheme: light) {
   :root {
@@ -23,51 +25,36 @@ a seguir apresentamos todas as variáveis relacionadas a cores do Copan:
     --fill-accent-hover: #0000CC;
     --fill-accent-disabled: #143E31;
 
-    --label-primary-default: #191919;
-    --label-primary-hover: #4C4C4C;
-    --label-primary-disabled: #7F7F7F;
+    --label-primary: #000;
+    --label-secondary: #FFF;
+    --label-accent: #0000EE;
 
-    --label-secondary-default: #EFEFEF;
-    --label-secondary-hover: #E3E3E3;
-    --label-secondary-default: #DFDFDF;
-
-    --label-accent-default: #0000EE;
-    --label-accent-hover: #0000CC;
-    --label-accent-disabled: #143E31;
-
-    --background-primary: #FFFFFF;
+    --background-primary: #FFF;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
-    --fill-primary-default: #F7F7F7;
-    --fill-primary-hover: #EFEFEF;
-    --fill-primary-disabled: #E0E0E0;
+    --fill-primary-default: #101010;
+    --fill-primary-hover: #181818;
+    --fill-primary-disabled: #3A3A3C;
 
-    --fill-accent-default: #0000EE;
-    --fill-accent-hover: #0000CC;
-    --fill-accent-disabled: #143E31;
+    --fill-accent-default: #2E236C;
+    --fill-accent-hover: #433D8B;
+    --fill-accent-disabled: #C8ACD6;
 
-    --label-primary-default: #191919;
-    --label-primary-hover: #4C4C4C;
-    --label-primary-disabled: #7F7F7F;
+    --label-primary: #FFF;
+    --label-secondary: #000;
+    --label-accent: #5049A6;
 
-    --label-secondary-default: #EFEFEF;
-    --label-secondary-hover: #E3E3E3;
-    --label-secondary-default: #DFDFDF;
-
-    --label-accent-default: #191919;
-    --label-accent-hover: #4C4C4C;
-    --label-accent-disabled: #7F7F7F;
-
-    --background-primary: #FFFFFF;
+    --background-primary: #000;
   }
 }
 ```
 
-Nota-se que temos uma condicional, `prefers-color-scheme` é uma valor de mídia
-disponibilizada pelo navegador a partir da preferência de esquema de cores padrão
-do sistema operacional do usuário. Então, caso queira, pode oferecer uma opção tanto
-para o modo claro, quanto para o modo escuro.
+Observe que utilizamos a consulta de mídia prefers-color-scheme, uma 
+funcionalidade disponível nos navegadores que adapta o esquema de cores 
+com base na preferência do sistema operacional do usuário. Assim, você pode 
+garantir que sua aplicação ofereça uma opção adequada tanto para o modo claro 
+quanto para o modo escuro.

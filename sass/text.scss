@@ -20,13 +20,13 @@ b {
 }
 
 span {
-  color: var(--label-primary-disabled);
+  color: var(--label-accent);
   font-family: var(--font-family-body);
   line-height: var(--line-height-body);
 }
 
 a {
-  color: var(--label-accent-default);
+  color: var(--label-accent);
   font-family: var(--font-family-body);
   line-height: var(--line-height-body);
   letter-spacing: var(--letter-spacing-body);
@@ -34,7 +34,7 @@ a {
 
 nav > a {
   font-size: var(--font-size-20);
-  color: var(--label-accent-default);
+  color: var(--label-accent);
   transition: var(--anchor-transition);
   text-decoration: var(--anchor-decoration);
 }
@@ -56,7 +56,9 @@ ol:before{
 
 pre {
   padding: 1rem;
+  text-wrap: wrap;
   border-radius: .5rem;
+  background-color: var(--fill-primary-default) !important;
 }
 
 .container-column-left {
