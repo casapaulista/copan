@@ -32,14 +32,14 @@ a {
   letter-spacing: var(--letter-spacing-body);
 }
 
-.nav--item {
+nav > a {
   font-size: var(--font-size-20);
   color: var(--label-accent-default);
   transition: var(--anchor-transition);
   text-decoration: var(--anchor-decoration);
 }
 
-.nav--item:hover, .nav--item:focus {
+nav > a:hover, nav > a:focus {
   font-style: italic;
 }
 
