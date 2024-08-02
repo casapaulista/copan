@@ -1,4 +1,5 @@
 button, input[type="submit"], .button {
+  display: block;
   transition: .5s;
   width: fit-content;
   border-radius: .5rem;
@@ -26,6 +27,13 @@ button:focus, input[type="submit"]:focus, .button:focus {
   background-color: var(--fill-accent-hover);
 }
 
+
+@media screen and (max-width: 768px) {
+  button, input[type="submit"], .button {
+    width: inherit;
+    text-align: center;
+  }
+}
 
 @media (prefers-color-scheme: dark) {
   .button-accent {

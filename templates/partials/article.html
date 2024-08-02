@@ -1,18 +1,16 @@
 <main>
-  <article class="article--container">
-    <header class="article--header">
-        <a href="{{ get_url(path="@/docs/_index.md") }}" class="button">&larr; Retornar</a>
-      <h1 class="article--title">
-        {{ page.title }}
-      </h1>
-      <span class="article--subtitle">Atualizado em {{ page.extra.longDate}}</span>
-    </header>
-    {{ page.content | safe }}
-    <footer class="article--footer">
-      <div class="article--footer-actions">
-        <a class="button" href="#top">Voltar ao topo</a>
-        <a class="button-accent" href="mailto:brasilisclub@proton.me?subject={{ page.title }}">Comente por E-mail</a>
-      </div>
-    </footer>
-  </article>
+    <article>
+        <header>
+            <a href="{{ get_url(path="@/docs/_index.md") }}" class="button">&larr; Retornar</a>
+            <h1>
+                {{ page.title }}
+            </h1>
+            <span>Atualizado em {{ page.extra.longDate}}</span>
+        </header>
+        {{ page.content | safe }}
+        <footer>
+            <a class="button" href="#top">Voltar ao topo</a>
+            <a class="button-accent" href="mailto:brasilisclub@proton.me?subject={{ page.title }}">Comente por E-mail</a>
+        </footer>
+    </article>
 </main>

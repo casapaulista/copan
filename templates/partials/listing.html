@@ -1,18 +1,10 @@
 <main> 
-    <section class="container--column">
-        <div arial-label="Listagem de postagens">
-            <a href="/" class="button">&larr; Retornar</a>
-            <h1 class="content--title">
-                {{ section.title }}
-            </h1>
-            <ul class="content--listing">
-                {% for page in section.pages %}
-                <li class="content--list-item">
-                    <span>{{ page.date }}</span>
-                    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
+    <section class="flex-column">
+        <a href="/" class="button">&larr; Retornar</a>
+        <ol aria-label="{{section.title}}">
+            {% for page in section.pages %}
+            <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+            {% endfor %}
+        </ol>
     </section>
 </main>

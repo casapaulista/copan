@@ -34,20 +34,16 @@ section, .section {
   padding: var(--page-padding);
 }
 
-.container--column {
-  display: flex;
+article, .article {
+  @extend .section;
+  width: 80%;
+  margin: auto;
 }
 
 .container--spaced-between {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.container--centered {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 article {
@@ -58,15 +54,33 @@ article {
 
 footer {
   gap: 1rem;
-  width: 100%;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
 }
 
 // Flex
 .align-center {
   display: flex;
   align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  article, .article {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
 }
