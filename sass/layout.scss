@@ -40,12 +40,6 @@ article, .article {
   margin: auto;
 }
 
-.container--spaced-between {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 article {
   min-height: 100vh;
   box-sizing: border-box;
@@ -73,6 +67,12 @@ footer {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+
+.space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
