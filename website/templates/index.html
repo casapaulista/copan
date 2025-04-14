@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block head %}
+<title> Copan | design system </title>
+<meta name="description" content="Made by Casa Paulista, Copan is a stylesheet (CSS) framework where form follows function." /> 
+<link rel="stylesheet" href="{{ get_url(path='home.css', trailing_slash=false) | safe }}"  /> 
+{% endblock head %}
+
+{% block content %}
+<main>
+    <p>A stylesheet framework where</p>
+    <h1><em>form</em> follows <em>function</em></h1>
+</main>
+{% endblock content %}

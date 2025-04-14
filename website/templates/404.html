@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block head %}
+<title> Página não encontrada | Copan </title>
+<meta name="description" content="Não foi possível encontrar a página solicitada" /> 
+<link rel="stylesheet" href="{{ get_url(path='error.css', trailing_slash=false) | safe }}"  /> 
+{% endblock head %}
+
+{% block content %}
+<main> 
+    <h1><em>404</em> Not found</h1>
+    <p>
+        Não foi possível encontrar a página solicitada.
+	Pode ser que não esteja mais disponível.
+    </p>
+</main>
+{% endblock content %}
