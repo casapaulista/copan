@@ -1,37 +1,40 @@
-@media (prefers-color-scheme: light) {
-  :root {
-    color-scheme: light;
-    --fill-primary-default: #EFEFEF;
-    --fill-primary-hover: #E3E3E3;
-    --fill-primary-disabled: #DFDFDF;
+:root {
+  --body-default: hsl(0, 0%, 10%);
+  --accent-default: hsl(229, 100%, 39%);
+  --background-default: hsl(0, 0%, 99%);
 
-    --fill-accent-default: #0000EE;
-    --fill-accent-hover: #0000CC;
-    --fill-accent-disabled: #143E31;
-
-    --label-primary: #000;
-    --label-secondary: #FFF;
-    --label-accent: #0000EE;
-
-    --background-primary: #FFF;
-  }
+  --hyperlink-default: hsl(229, 100%, 39%);
+  --hyperlink-visited: hsl(259, 42%, 35%);
+  --hyperlink-hover: hsl(240, 63%, 27%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --fill-primary-default: #101010;
-    --fill-primary-hover: #181818;
-    --fill-primary-disabled: #3A3A3C;
+html, body  {
+  color: var(--body-default);
+  background: var(--background-default);
+}
 
-    --fill-accent-default: #2E236C;
-    --fill-accent-hover: #433D8B;
-    --fill-accent-disabled: #C8ACD6;
+a {
+  color: var(--hyperlink-default);
+}
 
-    --label-primary: #FFF;
-    --label-secondary: #000;
-    --label-accent: #5049A6;
+a:visited {
+  color: var(--hyperlink-visited);
+}
 
-    --background-primary: #000;
-  }
+a:hover {
+  color: var(--hyperlink-hover);
+}
+
+i,
+b,
+em {
+  color: inherit;
+}
+
+main > h1 {
+  color: var(--accent-default);
+}
+
+header > a.logo {
+  color: var(--accent-default);
 }

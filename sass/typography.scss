@@ -1,0 +1,88 @@
+:root {
+  --font-serif: "Instrument", ui-serif;
+  --font-sans-serif: Helvetica, sans-serif;
+  --header-size: clamp(1rem, 0.917rem + 0.417vw, 1.25rem);
+  --header-spacing: calc(-0.01 * var(--header-size));
+  --headline-size: clamp(4rem, 20vw, 16rem);
+  --headline-spacing: calc(-0.01 * var(--headline-size));
+  --subheadline-size: clamp(2rem, 1.333rem + 3.333vw, 4rem);
+  --subheadline-spacing: calc(-0.01 * var(--subheadline-size));
+  --body-size: clamp(1.5rem, 1.333rem + 0.833vw, 2rem);
+  --body-spacing: calc(-0.01 * var(--body-size));
+  --footer-size: clamp(1.25rem, 1.167rem + 0.417vw, 1.5rem);
+  --footer-spacing: calc(-0.01 * var(--header-size));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+}
+
+p,
+a,
+span {
+  font-size: var(--body-size);
+  font-family: var(--font-sans-serif);
+  letter-spacing: var(--body-spacing);
+}
+
+i,
+b,
+em {
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+}
+
+header nav * {
+  font-size: var(--header-size);
+  letter-spacing: var(--header-spacing);
+}
+
+header nav a {
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header > a.logo {
+  text-decoration: none;
+  font-family: var(--font-serif);
+  font-size: calc(1.5 * var(--header-size));
+  letter-spacing: calc(1.5 * var(--header-spacing));
+}
+
+footer * {
+  font-size: var(--footer-size);
+  letter-spacing: var(--footer-spacing);
+}
+
+main > h1 {
+  margin: 0;
+  font-weight: 400;
+  line-height: 100%;
+  font-size: var(--subheadline-size);
+  letter-spacing: var(--subheadline-spacing);
+}
+
+@font-face {
+  font-family: "Instrument";
+  src: url("/fonts/instrument-normal.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Instrument";
+  src: url("/fonts/instrument-italic.woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: auto;
+}
