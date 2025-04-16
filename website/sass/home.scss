@@ -1,0 +1,34 @@
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.headline {
+  margin: auto;
+  color: var(--accent-default);
+}
+
+.headline > p {
+  margin: 0;
+  font-size: clamp(1.25rem, 1rem + 1.25vw, 2rem);
+}
+
+.headline > h1 {
+  margin: 0;
+  font-size: clamp(2rem, 10vw, 8rem);
+  font-weight: 500;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer p, footer i {
+  width: 100%;
+  font-size: clamp(1.25rem, 1rem + 1.25vw, 2rem);
+  text-align: center;
+  color: var(--accent-default);
+  font-family: var(--font-serif);
+}

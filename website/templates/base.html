@@ -3,16 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" href="{{ get_url(path='colors.css', trailing_slash=false) | safe }}" crossorigin="anonymous" />
+	<link rel="stylesheet" href="{{ get_url(path='colors.css', trailing_slash=false) | safe }}" crossorigin="anonymous" />
         <link rel="stylesheet" href="{{ get_url(path='grid.css', trailing_slash=false) | safe }}" crossorigin="anonymous" />
         <link rel="stylesheet" href="{{ get_url(path='typography.css', trailing_slash=false) | safe }}" crossorigin="anonymous" />
         <link rel="icon" href="{{ get_url(path='favicon.ico', trailing_slash=false) | safe }}" crossorigin="anonymous" />
         {% block head %}{% endblock head %}
     </head>
     <body>
-	<header>
+	<main>
 	    {% include "partials/header.html" %}
-	</header>
-        {% block content %}{% endblock content %}
+	    {% block content %}{% endblock content %}
+	</main>
     </body>
 </html>
