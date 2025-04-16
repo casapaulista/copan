@@ -1,6 +1,6 @@
 :root {
   --font-serif: "Instrument", ui-serif;
-  --font-sans-serif: Helvetica, sans-serif;
+  --font-sans-serif: "Inter", Helvetica, ui-sans-serif;
   
   --header-size: clamp(1rem, 0.917rem + 0.417vw, 1.25rem);
   --headline-size: clamp(4rem, 20vw, 16rem);
@@ -85,6 +85,38 @@ main > h1 {
   font-family: "Instrument";
   src: url("/fonts/Instrument/instrument-italic.woff2");
   font-weight: 400;
+  font-style: italic;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-RegularItalic.woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Medium.woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-MediumItalic.woff2");
+  font-weight: 500;
   font-style: italic;
   font-display: auto;
 }
